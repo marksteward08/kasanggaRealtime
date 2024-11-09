@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: 'https://kasangga.online', // Ensure this matches the client's origin
+        origin: ['https://kasangga.online', 'https://38c0-103-66-143-249.ngrok-free.app'], // Ensure this matches the client's origin
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true
